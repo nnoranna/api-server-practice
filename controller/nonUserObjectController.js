@@ -83,6 +83,8 @@ module.exports.getNonUserObjectById = async (req, res) => {
 module.exports.getAllNonUserObjects = async (req, res) => {
 	//console.log('body: ', req.body);
 
+	console.log(req);
+
 	let response = {...constants.defaultServerResponse};
 
 	try {

@@ -13,7 +13,7 @@ module.exports.createNonUserObject = async (serviceData) => {
  */
 
 	try {
-		let nonUserObject = new NonUserObject({...serviceData});
+		let nonUserObject = new NonUserObject({...serviceData}); //Object constructor
 		let result = await nonUserObject.save();
 		return formatMongoData(result);
 
